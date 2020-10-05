@@ -1,0 +1,19 @@
+{
+  "name": "dcs_server",
+  "version": "1.0.0",
+  "description": "DCS Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davicente/dcs_server.git"
+  },
+  "author": "David Vicente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davicente/dcs_server/issues"
+  },
+  "homepage": "https://github.com/davicente/dcs_server#readme"
+}
