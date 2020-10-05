@@ -1,0 +1,36 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DeepConsultingSolutions",
+		"_postman_id": "7670f2d1-6bac-3756-3a12-861c6ea05139",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"request": {
+				"url": "{{host}}{{path}}/helloworld",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"unemail@servidor.com\",\n\t\"password\": \"mypass\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
