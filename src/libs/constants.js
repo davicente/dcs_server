@@ -1,0 +1,1 @@
+exports.NOT_NUMBER_ERROR = "Value has to be a number";
