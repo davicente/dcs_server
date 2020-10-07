@@ -8,6 +8,62 @@
 	},
 	"item": [
 		{
+			"name": "metrics",
+			"description": "",
+			"item": [
+				{
+					"name": "Get metric sum",
+					"request": {
+						"url": "{{host}}{{path}}/metric/prueba/sum",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"unemail@servidor.com\",\n\t\"password\": \"mypass\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add metric",
+					"request": {
+						"url": "{{host}}{{path}}/metric/prueba2",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"value\": \"66\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Hello World",
 			"request": {
 				"url": "{{host}}{{path}}/helloworld",
