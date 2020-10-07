@@ -1,11 +1,14 @@
 const Router = require("express").Router;
+const metricsApi = require("./metrics/routes");
 
 exports.initializeAPI = () => {
-  const router = Router();
+    const router = Router();
 
-  router.get("/helloworld", (req, res) => {
-    res.send("hello world");
-  });
+    router.get("/helloworld", (req, res) => {
+        res.send("hello world");
+    });
 
-  return router;
+    metricsApi.loadRoutes(router);
+
+    return router;
 };

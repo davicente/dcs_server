@@ -24,7 +24,8 @@
     "express": "^4.17.1",
     "express-logger-unique-req-id": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
-    "mkdirp": "^1.0.4"
+    "mkdirp": "^1.0.4",
+    "node-schedule": "^1.3.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
