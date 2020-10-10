@@ -19,8 +19,8 @@ exports.addMetric = (req, res, next) => {
 exports.getMetricSum = (req, res, next) => {
     try {
         const key = req.params.key;
-        const sum = metricsController.getMetricSum(key);
-        return res.status(200).send({ sum });
+        const value = metricsController.getMetricSum(key);
+        return res.status(200).send({ value });
     } catch (error) {
         logger.error(error);
     }
