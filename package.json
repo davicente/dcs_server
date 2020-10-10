@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "nyc mocha test --timeout 10000 --trace-warnings --recursive --exit"
+    "test": "nyc --reporter=html mocha test --timeout 10000 --trace-warnings --recursive --exit"
   },
   "repository": {
     "type": "git",
