@@ -18,6 +18,7 @@ exports.addMetric = (key, value) => {
     const newMetric = { value, date };
     metricsDates[key].push(newMetric);
     metricsSums[key] += value;
+    logger.debug(`Metric added successfully: ${key} - ${value}. Current sum is ${metricsSums[key]}`);
     if (emptyMetric) scheduleRemoveMetric(key, value, date);
     return;
 };
